@@ -13,11 +13,11 @@ namespace Game
 
         public GameObject CreatePipePair(Vector3 position, Quaternion rotation, GameObject parent)
         {
-            var stupidNameForAVariableAmIRight = Instantiate(this.pipePairPrefab, position, rotation);
+            var pipePair = Instantiate(this.pipePairPrefab, position, rotation);
             if (parent)
-                stupidNameForAVariableAmIRight.transform.parent = parent.transform;
+                pipePair.transform.parent = parent.transform;
 
-            return stupidNameForAVariableAmIRight;
+            return pipePair;
         }
     }
 }
